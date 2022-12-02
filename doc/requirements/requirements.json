@@ -1,0 +1,72 @@
+{
+  "requirements": [
+    {
+      "ID": "WATER_LEVEL_READ_1",
+      "Description": "The system have to measure the distance from the sensor location to the water surface"
+    },
+    {
+      "ID": "WATER_LEVEL_READ_2",
+      "Description": "The maximum tolerable error for distance measuring is 1cm"
+    },
+    {
+      "ID": "WATER_LEVEL_READ_3",
+      "Description": "The system needs to ensure reliable readings"
+    },
+    {
+      "ID": "WATER_LEVEL_READ_4",
+      "Description": "The measured values have to be between the 10 cm and 100 cm"
+    },
+    {
+      "ID": "WATER_LEVEL_READ_5",
+      "Description": "In case of faulty measurement, the water pump must be deactivated and the controller swtiched to fault state"
+    },
+    {
+      "ID": "WATER_LEVEL_READ_6",
+      "Description": "The system needs to monitor the water level every 500ms"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_1",
+      "Description": "The system must use the malfuntion lamp to indicate the operator that the fault state is triggered"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_2",
+      "Description": "The system must remain in fault state until the operator acknowledge the error"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_3",
+      "Description": "The system must provide a reset buton in order to exit the fault state"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_4",
+      "Description": "The system have to report the cause of the fault system on the LCD"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_5",
+      "Description": "In case of the undefined behaviour, the system have to display the following message: 'Error: Call service' and enter the fault state"
+    },
+    {
+      "ID": "CONFIGURATION_1",
+      "Description": "The height of the water level must be configurable by using the rotary encoder"
+    },
+    {
+      "ID": "CONFIGURATION_2",
+      "Description": "The mode can be switch between AUTO and MANUAL by using the switch"
+    },
+    {
+      "ID": "CONFIGURATION_3",
+      "Description": "A reset button must be provided to enable the operator to exit fault mode"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_6",
+      "Description": "The system must monitor that the water pump is active just when it is commanded to"
+    },
+    {
+      "ID": "FUNCTIONAL_SAFETY_7",
+      "Description": "The system must deactivate the water pump in case it is active when it should not be"
+    },
+    {
+      "ID": "BASIC_FUNCTIONALITY_1",
+      "Description": "Water pump must be activated when LOWER_THRESHOLD is hit until the UPPER_THRESHOLD is met"
+    }
+  ]
+}
